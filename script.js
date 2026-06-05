@@ -5,16 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ---- PRELOADER ----
-  const preloader = document.getElementById('preloader');
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      preloader.classList.add('hidden');
-    }, 1200);
-  });
-  // Fallback: remove preloader after 3s even if load doesn't fire
-  setTimeout(() => { preloader.classList.add('hidden'); }, 3000);
-
 
   // ---- NAVBAR SCROLL EFFECT ----
   const navbar = document.getElementById('navbar');
