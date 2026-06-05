@@ -7,22 +7,22 @@
 
 /* ---- CSS Variables / Design Tokens ---- */
 :root {
-  --gold: #FFE400;
-  --gold-dark: #D4A817;
-  --gold-light: #FFF176;
-  --black: #000000;
-  --black-soft: #0A0A0A;
-  --dark: #111111;
-  --dark-card: #1A1A1A;
-  --dark-card-hover: #222222;
-  --gray-900: #1a1a1a;
-  --gray-800: #2a2a2a;
-  --gray-700: #3a3a3a;
-  --gray-600: #555555;
-  --gray-400: #999999;
-  --gray-300: #bbbbbb;
-  --gray-200: #dddddd;
-  --white: #ffffff;
+  --gold: #D4A817;
+  --gold-dark: #b38a12;
+  --gold-light: #eebb20;
+  --black: #ffffff;
+  --black-soft: #f8fafc;
+  --dark: #f0f4f8;
+  --dark-card: #ffffff;
+  --dark-card-hover: #f1f5f9;
+  --gray-900: #e2e8f0;
+  --gray-800: #cbd5e1;
+  --gray-700: #94a3b8;
+  --gray-600: #64748b;
+  --gray-400: #475569;
+  --gray-300: #334155;
+  --gray-200: #1e293b;
+  --white: #0f172a;
   --red: #E53935;
   --green: #43A047;
 
@@ -189,11 +189,11 @@ img {
 }
 
 .navbar.scrolled {
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   padding: 12px 0;
-  border-bottom: 1px solid rgba(255, 228, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .navbar .container {
@@ -336,7 +336,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.35) contrast(1.1);
+  filter: brightness(0.85) contrast(1.05);
 }
 
 .hero-overlay {
@@ -344,9 +344,9 @@ img {
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(0,0,0,0.85) 0%,
-    rgba(0,0,0,0.5) 50%,
-    rgba(0,0,0,0.7) 100%
+    rgba(255,255,255,0.9) 0%,
+    rgba(255,255,255,0.6) 50%,
+    rgba(255,255,255,0.8) 100%
   );
   z-index: 1;
 }
@@ -453,7 +453,7 @@ img {
 .btn-outline {
   background: transparent;
   color: var(--white);
-  border: 2px solid rgba(255,255,255,0.3);
+  border: 2px solid rgba(0,0,0,0.2);
 }
 
 .btn-outline:hover {
@@ -793,7 +793,7 @@ img {
 }
 
 .price-card.featured {
-  background: linear-gradient(145deg, #1a1a00, #0d0d00);
+  background: linear-gradient(145deg, #fffbf0, #fff5cc);
   border-color: var(--gold);
 }
 
@@ -1342,7 +1342,7 @@ img {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(0,0,0,0.85);
+  background: rgba(255,255,255,0.85);
   backdrop-filter: blur(10px);
   display: none;
   align-items: center;
